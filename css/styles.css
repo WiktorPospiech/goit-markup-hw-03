@@ -1,0 +1,151 @@
+:root {
+  --brand-color: #2196f3;
+  --background-color: #2f303a;
+  --color-secondary: #212121;
+}
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+.logo,
+.footer-logo {
+  font-family: "Releway, sans-serif";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--brand-color);
+  line-height: 1.2px;
+  letter-spacing: 0.03em;
+}
+.logo span {
+  color: #000000;
+}
+.logo span:focus,
+.logo span:hover {
+  color: var(--brand-color);
+}
+.menu a {
+  color: var(--color-secondary);
+}
+.menu a,
+.contacts a {
+  font-family: "Roboto, sans-serif";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.menu a:focus,
+.menu a:hover,
+.contacts :focus,
+.contacts :hover,
+.footer-contacts a:focus,
+.footer-contacts a:hover {
+  color: var(--brand-color);
+}
+.contacts a {
+  color: #757575;
+}
+.introduction {
+  background-color: var(--background-color);
+}
+.slogan {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+.slogan-button {
+  font-family: "Roboto, sans-serif";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: var(--brand-color);
+}
+.advantages h3 {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.advantages p {
+  line-height: 1.7;
+}
+.example h2,
+.aboutus h2 {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.aboutus {
+  background: #f5f4fa;
+}
+.aboutus h3 {
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+.aboutus p,
+.aboutus h3 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.page-footer {
+  background: var(--background-color);
+}
+.footer-logo span {
+  color: #fff;
+}
+.footer_adres {
+  font-style: normal;
+  line-height: 1.7;
+  color: #fff;
+}
+.footer-contacts a {
+  font-style: normal;
+  font-family: "Roboto, sans-serif";
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.portfolio-categories button {
+  font-family: "Roboto, sans-serif";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  background-color: #f5f4fa;
+}
+.portfolio-categories button:focus,
+.portfolio-categories button:hover {
+  background-color: var(--brand-color);
+  color: #fff;
+}
+.portfolio-img h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-secondary);
+}
+.portfolio-img p {
+  font-size: 16px;
+  line-height: 1.9;
+}
