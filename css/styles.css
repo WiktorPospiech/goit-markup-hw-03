@@ -5,12 +5,22 @@
 }
 * {
   margin: 0;
+  padding: 0;
+  padding-inline-start: 0px;
+  border-style: none;
 }
 a {
   text-decoration: none;
 }
+nav {
+  align-items: center;
+}
 button {
   cursor: pointer;
+  padding-top: 10px;
+  padding-right: 41px;
+  padding-bottom: 10px;
+  padding-left: 42px;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -20,6 +30,36 @@ body {
 }
 li {
   list-style: none;
+}
+.section {
+  padding: 94px 0;
+}
+.logo {
+  display: block;
+  margin-right: 93px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-around;
+}
+
+.menu,
+.contacts,
+nav,
+.header-section,
+.advantages,
+.example-list,
+.aboutus-list,
+.portfolio-categories {
+  display: flex;
+}
+
+.header-section {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo,
 .footer-logo {
@@ -33,12 +73,15 @@ li {
 .logo span {
   color: #000000;
 }
-.logo span:focus,
-.logo span:hover {
-  color: var(--brand-color);
-}
 .menu a {
   color: var(--color-secondary);
+}
+.middle-menu-element {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+.mail {
+  padding-right: 50px;
 }
 .menu a,
 .contacts a {
@@ -61,16 +104,22 @@ li {
 }
 .introduction {
   background-color: var(--background-color);
+  text-align: center;
+  padding: 200px 452px;
 }
+
 .slogan {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: #fff;
+  padding-bottom: 30px;
 }
 .slogan-button {
+  border: none;
   font-family: "Roboto, sans-serif";
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
@@ -78,6 +127,21 @@ li {
   color: #fff;
   background-color: var(--brand-color);
 }
+.portfolio-categories li:nth-child(-n + 4),
+.advantages li:nth-child(-n + 3),
+.aboutus-list li:nth-child(-n + 3),
+.example-list li:nth-child(-n + 2) {
+  margin-right: 30px;
+}
+.aboutus-list {
+  text-align: center;
+}
+.aboutus-list li {
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+}
+
 .advantages h3 {
   color: var(--color-secondary);
   font-weight: 700;
@@ -87,27 +151,36 @@ li {
 .advantages p {
   line-height: 1.7;
 }
-.example h2,
-.aboutus h2 {
+.example-header,
+.aboutus-header {
+  text-align: center;
   color: var(--color-secondary);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  padding-bottom: 50px;
 }
 .aboutus {
   background: #f5f4fa;
 }
-.aboutus h3 {
+
+.aboutus-list h3 {
   font-weight: 500;
   color: var(--color-secondary);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
-.aboutus p,
-.aboutus h3 {
+.aboutus-list p,
+.aboutus-list h3 {
   font-size: 16px;
   line-height: 1.2;
 }
-.page-footer {
+footer {
   background: var(--background-color);
+}
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo span {
   color: #fff;
@@ -133,10 +206,25 @@ li {
   color: var(--color-secondary);
   background-color: #f5f4fa;
 }
+.portfolio-categories {
+  justify-content: center;
+}
+.propositions {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 .portfolio-categories button:focus,
 .portfolio-categories button:hover {
   background-color: var(--brand-color);
   color: #fff;
+}
+.portfolio-img li {
+  border: 2px dashed red;
+  display: block;
+}
+.portfolio-img {
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio-img h3 {
   font-weight: 700;
