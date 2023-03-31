@@ -1,12 +1,22 @@
 :root {
   --brand-color: #2196f3;
   --background-color: #2f303a;
+  --backrground-second-color: #fff;
   --color-secondary: #212121;
+  --paragraf-font-color: #757575;
+  --paragraf-font-size: 16px;
+  --header2-font-size: 36px;
 }
 * {
   margin: 0;
   padding: 0;
   border-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--paragraf-font-color);
+  font-size: 14px;
 }
 a {
   text-decoration: none;
@@ -18,27 +28,17 @@ button {
   padding-bottom: 10px;
   padding-left: 42px;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  color: #757575;
-  font-size: 14px;
-}
 li {
   list-style: none;
-}
-.section {
-  padding: 94px 0;
-}
-.logo {
-  margin-right: 93px;
 }
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
-
+.section {
+  padding: 94px 0;
+}
 .menu,
 .contacts,
 nav,
@@ -49,17 +49,22 @@ nav,
 .portfolio-categories {
   display: flex;
 }
-nav {
-  display: flex;
-  align-items: center;
-}
 .header-section {
   padding-top: 24px;
   padding-bottom: 25px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 27px;
 }
 .header-border {
   border-bottom: 1px solid #ececec;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 93px;
 }
 .logo,
 .footer-logo {
@@ -73,15 +78,11 @@ nav {
 .logo span {
   color: #000000;
 }
+.menu {
+  column-gap: 46px;
+}
 .menu a {
   color: var(--color-secondary);
-}
-.middle-menu-element {
-  padding-left: 46px;
-  padding-right: 46px;
-}
-.mail {
-  padding-right: 50px;
 }
 .menu a,
 .contacts a {
@@ -90,6 +91,9 @@ nav {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+.contacts {
+  column-gap: 50px;
 }
 .menu a:focus,
 .menu a:hover,
@@ -100,7 +104,7 @@ nav {
   color: var(--brand-color);
 }
 .contacts a {
-  color: #757575;
+  color: var(--paragraf-font-color);
 }
 .introduction {
   background-color: var(--background-color);
@@ -119,7 +123,7 @@ nav {
   font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--backrground-second-color);
   padding-bottom: 30px;
 }
 .slogan-button {
@@ -130,27 +134,14 @@ nav {
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--backrground-second-color);
   background-color: var(--brand-color);
-}
-.portfolio-categories li:not(:last-child) {
-  margin-right: 8px;
 }
 .advantages li:not(:last-child),
 .aboutus-list li:not(:last-child),
 .example-list li:not(:last-child) {
   margin-right: 30px;
 }
-.aboutus-list {
-  text-align: center;
-}
-.aboutus-list li {
-  padding-bottom: 30px;
-  background-color: #fff;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
-    0px 1px 3px 0px #0000001f;
-}
-
 .advantages h3 {
   color: var(--color-secondary);
   font-weight: 700;
@@ -169,9 +160,18 @@ nav {
   text-align: center;
   color: var(--color-secondary);
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--header2-font-size);
   line-height: 1.2;
   padding-bottom: 50px;
+}
+.aboutus-list {
+  text-align: center;
+}
+.aboutus-list li {
+  padding-bottom: 30px;
+  background-color: var(--backrground-second-color);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 }
 .aboutus {
   background: #f5f4fa;
@@ -185,31 +185,8 @@ nav {
 }
 .aboutus-list p,
 .aboutus-list h3 {
-  font-size: 16px;
+  font-size: var(--paragraf-font-size);
   line-height: 1.2;
-}
-footer {
-  background: var(--background-color);
-}
-.page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer-logo span {
-  color: #fff;
-}
-.footer_adres {
-  font-style: normal;
-  line-height: 1.7;
-  color: #fff;
-}
-.footer-contacts a {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 .portfolio-categories button {
   font-family: "Roboto", sans-serif;
@@ -227,7 +204,7 @@ footer {
 .portfolio-categories button:focus,
 .portfolio-categories button:hover {
   background-color: var(--brand-color);
-  color: #fff;
+  color: var(--backrground-second-color);
   box-shadow: 0px 2px 2px 0px #0000001f;
   box-shadow: 0px 1px 2px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
@@ -237,7 +214,9 @@ footer {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 20px;
 }
-
+.portfolio-categories li:not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
@@ -252,6 +231,29 @@ footer {
   color: var(--color-secondary);
 }
 .portfolio-img p {
-  font-size: 16px;
+  font-size: var(--paragraf-font-size);
   line-height: 1.9;
+}
+footer {
+  background: var(--background-color);
+}
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo span {
+  color: var(--backrground-second-color);
+}
+.footer_adres {
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--backrground-second-color);
+}
+.footer-contacts a {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
