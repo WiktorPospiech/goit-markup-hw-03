@@ -68,7 +68,7 @@ nav,
 }
 .logo,
 .footer-logo {
-  font-family: "Releway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: var(--brand-color);
@@ -244,10 +244,18 @@ footer {
 .footer-logo span {
   color: var(--backrground-second-color);
 }
-.footer_adres {
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer-adres {
   font-style: normal;
   line-height: 1.7;
   color: var(--backrground-second-color);
+}
+address {
+  margin-top: 20px;
 }
 .footer-contacts a {
   font-style: normal;
